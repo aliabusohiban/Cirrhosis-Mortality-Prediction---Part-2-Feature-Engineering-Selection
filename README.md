@@ -97,7 +97,7 @@ cirrhosis-mortality-part2/
 
 PCA was applied to the scaled training data to compress correlated biomarkers into compact summaries.
 
-![PCA Scree Plot](assets/pca_scree.png)
+![PCA Scree Plot](asset/pca_scree.png)
 
 The three components together explain **41.3% of total patient variance**:
 
@@ -113,13 +113,13 @@ PC1 is the most meaningful: it is a data-driven version of what hepatologists al
 
 ### KMeans Clustering — k=2
 
-![Elbow and Silhouette Plot](assets/elbow_silhouette.png)
+![Elbow and Silhouette Plot](asset/elbow_silhouette.png)
 
 The elbow curve shows no sharp break, which is typical of clinical data where patient severity exists on a continuum rather than in discrete groups. The silhouette score peaks at **k=2 (score = 0.22)**, confirming two clusters as the most statistically defensible choice.
 
 A silhouette of 0.22 reflects real but overlapping groups — expected in a heterogeneous disease population. It is not a weakness; it is an honest reflection of the data.
 
-![Cluster Profile](assets/cluster_profile.png)
+![Cluster Profile](asset/cluster_profile.png)
 
 The two clusters discovered with no knowledge of outcomes:
 
@@ -141,7 +141,7 @@ The algorithm independently found the same separation a hepatologist would draw 
 
 All tuned models used 5-fold GridSearchCV with recall_macro as the scoring metric.
 
-![Model Comparison](assets/model_comparison.png)
+![Model Comparison](asset/model_comparison.png)
 
 | Model | Feature Set | CV recall_macro | Test recall_macro | AUC |
 |---|---|---|---|---|
@@ -164,7 +164,7 @@ All tuned models used 5-fold GridSearchCV with recall_macro as the scoring metri
 
 ## Permutation Importance
 
-![Permutation Importance](assets/permutation_importance.png)
+![Permutation Importance](asset/permutation_importance.png)
 
 Permutation importance answers: *if we randomly shuffle one feature, how much does recall_macro drop?* A larger drop means the model depended on that feature.
 
@@ -184,7 +184,7 @@ The top features align with the Mayo PBC prognostic score — a validated clinic
 
 ### Bilirubin and Mortality
 
-![Bilirubin Mortality](assets/bilirubin_mortality.png)
+![Bilirubin Mortality](asset/bilirubin_mortality.png)
 
 418 patients grouped by bilirubin level at enrollment:
 
@@ -197,7 +197,7 @@ Bilirubin is a waste product the liver clears from the blood. As bile ducts are 
 
 ### Disease Stage and Mortality
 
-![Stage Mortality](assets/stage_mortality.png)
+![Stage Mortality](asset/stage_mortality.png)
 
 418 patients grouped by liver biopsy stage:
 
