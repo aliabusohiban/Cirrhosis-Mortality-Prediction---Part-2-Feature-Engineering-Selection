@@ -247,8 +247,7 @@ This notebook demonstrates a complete, scientifically careful ML pipeline on a r
 
 ## Related
 
-- [Part 1 — EDA, Preprocessing & Baseline Models](../cirrhosis-mortality-part1)
-
+- [Part 1 — EDA, Preprocessing & Baseline Models]([https://github.com/AliAbuSohiban/cirrhosis-mortality-part1](https://github.com/aliabusohiban/Cirrhosis-Mortality-Prediction))
 ---
 
 ## Author
