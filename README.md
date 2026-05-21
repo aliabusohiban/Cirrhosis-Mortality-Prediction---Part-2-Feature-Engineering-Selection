@@ -62,7 +62,7 @@ Missing a death is a worse error than a false alarm. The primary metric througho
 cirrhosis-mortality-part2/
 ├── cirrhosis_ml_part2.ipynb      # Full pipeline notebook
 ├── README.md
-└── assets/
+└── asset/
     ├── pca_scree.png
     ├── elbow_silhouette.png
     ├── cluster_profile.png
